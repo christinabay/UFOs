@@ -6,7 +6,8 @@ var tbody = d3.select("tbody");
 
 function buildTable(data) {
   // First, clear out any existing data
-  tbody.html("");
+    tbody.html("");
+    console.log(data);
 
   // Next, loop through each object in the data
   // and append a row and cells for each value in the row
@@ -58,7 +59,7 @@ function updateFilters() {
 
 // 7. Use this function to filter the table when data 
 // is entered
-    function filterTable() {
+    function filterTable(filters) {
 
         // 8. Set the filtered data to the tableData
         let filteredData = tableData;
@@ -74,7 +75,7 @@ function updateFilters() {
     }
 
     // 2. Attach an event to listen for changes to each filter
-    d3.selectAll("#input").on("change", updateFilters);
+    d3.selectAll("input").on("change", updateFilters);
 
-    // Build teh table when the page loads
+    // Build the table when the page loads
     buildTable(tableData);
