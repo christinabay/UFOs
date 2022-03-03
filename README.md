@@ -15,4 +15,4 @@ This holds true for filters by date, country, and shape, and multiple form field
 ## 3. Summary
 - One drawback of this design is that it is case sensitive, so typing in "CA" will not yeild results for California.
 - Further development would include fixing the case sensitivity glitch.
-- Another would be including a "clear fields" button to clear all the filtes and return your results back to "all". 
+- Another would be including a "clear fields" button to clear all the filters and return your results back to "all". 
